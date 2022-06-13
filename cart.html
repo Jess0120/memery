@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.ico" type="image/x-icon" >
+    <script src="assets/src/header.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <a href="index.html" class="logo"><span class="Tchange">MEME</span>RY</a>
+        <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="login.html">MemberShip</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </header>
+    <section class="page">
+        <div class="buyitem">
+            <h1 class="cart-title"><span class="Tchange">CART</span> LIST</h1>
+            <table class="buylist" id="list">
+                <tr class="item_header">
+                    <td class="pic"> </td>
+                    <td class="namebox">Product</td>
+                    <td class="price">Price</td>
+                    <td class="count">Quantity</td>
+                    <td class="amount">Total</td>
+                    <td class="operate"></td>
+                </tr>
+                <tr class="product">
+                    <td><img src="assets/images/product/product1-1.jpg" alt="" width="150px" height="150px"></td>
+                    <td class="namebox">
+                        <span class="name">星夜 | De sterrennacht</span>
+                    </td>
+                    <td class="price">$100.00</td>
+                    <td class="count">
+                        <input type="text" class="product-q" value="1" >
+                    </td>
+                    <td class="subtotal">100.00</td>
+                    <td class="operate">
+                        <button type="button" class="remove" onclick="rm(this)">REMOVE</button>
+                    </td>
+                </tr>
+                <tr class="product">
+                    <td><img src="assets/images/product/product2-5.jpg" alt="" width="150px" height="150px"></td>
+                    <td class="name">
+                        <span class="name">章魚與海女 | 蛸と海女</span>
+                    </td>
+                    <td class="price" >$100.00</td>
+                    <td class="count">
+                        <input type="text" class="product-q" value="1">
+                    </td>
+                    <td class="subtotal">100.00</td>
+                    <td class="operate">
+                        <button type="button" class="remove" onclick="rm(this)">REMOVE</button>
+                    </td>
+                </tr>
+                <tr class="product">
+                    <td><img src="assets/images/product/product4-5.jpg" alt="" width="150px" height="150px"></td>
+                    <td class="name">
+                        <span class="name">內戰的預感 | Premonición de la Guerra Civil</span>
+                    </td>
+                    <td class="price" >$100.00</td>
+                    <td class="count">
+                        <input type="text" class="product-q" value="1">
+                    </td>
+                    <td class="subtotal">100.00</td>
+                    <td class="operate">
+                        <button type="button" class="remove" onclick="rm(this)">REMOVE</button>
+                    </td>
+                </tr>
+            </table>
+            <div class="btn">
+                <a href="shop.html"><button class="btn-sty">SHOP</button></a>
+                <button class="btn-sty" onclick="totalprice(this)">TOTAL</button>
+                <a href="cartcheckout.html"><button class="btn-sty" >CHECKOUT</button></a>
+            </div>
+        </div>
+    </section>
+    <script src="assets/src/cart.js"></script>
+</body>
+</html>

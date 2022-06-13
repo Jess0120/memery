@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.ico" type="image/x-icon" >
+    <script src="assets/src/header.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bttop.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/product.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/comment.css">
+    <title>Product</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+      <a href="index.html" class="logo"><span class="Tchange">MEME</span>RY</a>
+      <ul>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="login.html">MemberShip</a></li>
+          <li><a href="cart.html">Cart</a></li>
+      </ul>
+  </header>
+  <a href="#Top">
+    <img src="assets/images/backtotop.png" width="100px" class="backtotop">
+  </a>
+  <div id="back">
+    <a href="shop.html"><img src="assets/images/exit.png"></a>
+  </div>
+
+    <section id="product">
+      <div class="photo">
+        <img class="round" src="assets/images/product/product1-1.jpg">
+      </div>
+      <div class="right">
+        <div class="detail">
+            <h1>星夜 | De sterrennacht</h1>
+            <h2>文森·威廉·梵谷 | Vincent Willem van Gogh</h2>
+            <h2 id="sale">售價: $100.00</h2>
+        </div>
+
+        <!--數量選擇-->
+        <form id="myform" method="POST" action="">
+          <input type="button" value="-" class="qtyminus" field="quantity" />
+          <input type="text" name="quantity" value="0" class="qty" readonly />
+          <input type="button" value="+" class="qtyplus" field="quantity" />
+        </form>
+
+        <button><h1>加入購物車</h1></button>
+
+        <!--stars-->
+        <div class="star">★★★★★</div>
+      </div>
+    </section>
+    <hr><div class="title"><span class="Tchange">CON</span>TANT</div>
+    <div class="word">
+      <h2>1889年12月23日，梵谷在與高更的一次爭吵之後，因思覺失調症復發而割下了自己的左耳，用手帕包起後送給一名妓女。隔年5月8日自願前往普羅旺斯地區聖雷米的一家精神病院治療，在那駐留了108天。在入住精神病院期間，梵谷創作了大量的繪畫作品，共計一百五十多幅油畫和一百多幅素描。在此階段的繪畫，梵谷的畫風開始趨向於表現主義，作品充滿憂鬱精神和悲劇性幻覺，其中作品《星夜》正是其中代表之一。作品《星夜》是在醫生允許梵谷白天可以外出的條件下所創作，而其作品所描述的風景也正是精神病院所在地聖雷米。</h2>
+    </div>
+    <hr><div class="title"><span class="Tchange">COM</span>MENTS</div>
+    <!--comments-->
+      <div class="comments-app" ng-app="commentsApp" ng-controller="CommentsController as cmntCtrl">
+        
+    <!-- Comment - Dummy -->
+        <div class="comment">
+    <!-- Comment Avatar -->
+          <div class="comment-avatar">
+            <img src="assets/images/avatar.png">
+          </div>
+    <!-- Comment Box -->
+          <div class="comment-box">
+            <div class="comment-text">hello</div>
+            <div class="comment-footer">
+              <div class="comment-info">
+                <span class="comment-author">
+                  time
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Comment - Dummy -->
+        <div class="comment">
+          <!-- Comment Avatar -->
+                <div class="comment-avatar">
+                  <img src="assets/images/avatar.png">
+                </div>
+          <!-- Comment Box -->
+                <div class="comment-box">
+                  <div class="comment-text">hello</div>
+                  <div class="comment-footer">
+                    <div class="comment-info">
+                      <span class="comment-author">
+                        time
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+
+    <!--footer-->
+    <footer>
+      <div class="Copyright">
+        <p>Copyright © 2022 , CYCUIM<br>GROUP22</p>
+        <div class="contact">
+          <a href="mailto:we751015@gmail.com"><img src="assets/images/mail.png"></a>
+        </div>
+        <p>CONTACT US</p>
+      </div>
+    </footer>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script  src="assets/src/choose.js"></script>

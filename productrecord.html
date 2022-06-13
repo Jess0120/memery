@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.ico" type="image/x-icon" >
+    <script src="assets/src/header.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bttop.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/product.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/productstar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/comment.css">
+    <title>Review</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+      <a href="index.html" class="logo"><span class="Tchange">MEME</span>RY</a>
+      <ul>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="login.html">MemberShip</a></li>
+          <li><a href="cart.html">Cart</a></li>
+      </ul>
+  </header>
+    <section id="product">
+      <div class="photo">
+        <img class="round" src="assets/images/product/product1-1.jpg">
+      </div>
+      <div class="right">
+        <div class="detail">
+            <h1>星夜 | De sterrennacht</h1>
+            <h2>收貨者:MEMERY</h2>
+			      <h2>收貨者電話:0912345678</h2>
+			      <h2>收貨者地址:桃園市中壢區</h2>
+            <h2>數量:&emsp;1&emsp;份</h2>
+            <h2>金額: $100.00</h2>
+			      <h2>付款方式:貨到付款</h2>
+        </div>
+      </div>
+    </section>
+    <hr><div class="title"><span class="Tchange">RE</span>VIEWS</div>
+		<div class="RS">
+      <div class="rating">
+        <label>
+          <input type="radio" name="stars" value="1" />
+          <span class="icon">★</span>
+        </label>
+        <label>
+          <input type="radio" name="stars" value="2" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+        </label>
+        <label>
+          <input type="radio" name="stars" value="3" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>   
+        </label>
+        <label>
+          <input type="radio" name="stars" value="4" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+        </label>
+        <label>
+          <input type="radio" name="stars" value="5" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+        </label>
+      </div>
+  </div>
+      <!--comments-->
+      <div class="comments-app" ng-app="commentsApp" ng-controller="CommentsController as cmntCtrl">
+        <!-- From -->
+        <div class="comment-form">
+        <!-- Comment Avatar -->
+        <div class="comment-avatar">
+          <img src="assets/images/avatar.png">
+        </div>
+    
+        <div class="form">
+          <div class="form-row">
+            <textarea class="input" name="comment" placeholder="Add comment..." required></textarea>
+          </div>
+          <div class="form-row">
+            <input type="submit" value="Add Review">
+          </div>
+        </div>
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.ico" type="image/x-icon" >
+    <script src="assets/src/header.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <a href="index.html" class="logo"><span class="Tchange">MEME</span>RY</a>
+        <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="login.html">MemberShip</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </header>
+    <section class="page">
+        <div class="buyitem-c">
+            <h1 class="cart-title"><span class="Tchange">CART</span> LIST</h1>
+            <table class="buylist" id="list">
+                <tr class="item_header">
+                    <td class="pic"></td>
+                    <td class="namebox">Product</td>
+                    <td class="count">Quantity</td>
+                    <td class="amount">Total</td>
+                </tr>
+                <tr class="product">
+                    <td><img src="assets/images/product/product1-1.jpg" alt="" width="150px" height="150px"></td>
+                    <td class="namebox">
+                        <span class="name">星夜 | De sterrennacht</span>
+                    </td>
+                    <td class="count">1</td>
+                    <td class="subtotal">100.00</td>
+                </tr>
+                <tr class="product">
+                    <td><img src="assets/images/product/product2-5.jpg" alt="" width="150px" height="150px"></td>
+                    <td class="name">
+                        <span class="name">章魚與海女 | 蛸と海女</span>
+                    </td>
+                    <td class="count">1</td>
+                    <td class="subtotal">100.00</td>
+                </tr>
+                <tr class="product">
+                    <td><img src="assets/images/product/product4-5.jpg" alt="" width="150px" height="150px"></td>
+                    <td class="name">
+                        <span class="name">內戰的預感 | Premonición de la Guerra Civil</span>
+                    </td>
+                    <td class="count">1</td>
+                    <td class="subtotal">100.00</td>
+                </tr>
+                <tr class="product">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="total"><h2>TOTAL AMOUNT:$300.00</h2></td>
+                </tr>
+            </table>
+            <hr>
+                
+            <div class="member-data">
+                <div class="buymember">填寫收件資料</div>
+                <div>收件人：<input type="text" id="customer" required placeholder="姓名" value="MEMERY"></div>
+                <div>收件地址：<input type="text" id="address" required placeholder="地址" value="桃園市中壢區"></div>
+                <div>連絡電話：<input type="tel" required placeholder="電話" value="0912345678"></div>
+                <div>付款方式：
+                    <input name="pay" type="radio" checked>貨到付款&emsp;
+                    <input name="pay" type="radio">Line Pay&emsp;
+                    <input name="pay" type="radio">信用卡付款
+                </div>
+            </div>
+            <div class="btn">
+                <button class="btn-sty" id="end">ORDER</button>
+            </div>
+        </div>
+    </section>
+    <script src="assets/src/cart.js"></script>
+</body>
+</html>
