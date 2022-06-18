@@ -13,7 +13,7 @@ setInterval(()=>{
         glitch[i].style.top=Math.floor(Math.random()*100)+'vh'
         glitch[i].style.width=Math.floor(Math.random()*400)+'px'
         glitch[i].style.height=Math.floor(Math.random()*100)+'px'
-        glitch[i].style.backgroundPostion=Math.floor(Math.random()*500)+'vw'
+        glitch[i].style.backgroundPosition=Math.floor(Math.random()*500)+'vw'
     }
 }, 200)
 
